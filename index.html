@@ -1,11 +1,278 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Intranet in 30 Minutes</title>
+    <title>Presentation</title>
+    <base target="_blank">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<h1>Coming soon</h1>
+<div class="container">
+    <section>
+        <h1>Intranet in 30 Minuten</h1>
+        <p>Georg Schmidl (<a href="http://www.scandio.de">Scandio</a>)</p>
+    </section>
+
+    <section>
+        <h1>Intranet?</h1>
+        <ul>
+            <li>Was ist mit Intranet gemeint? Das Netzwerk?</li>
+            <li>Diese eine Intranet Appliktion, die als Startseite im Browser eines Unternehmens eingerichtet ist</li>
+        </ul>
+        <div class="conclusion">-> Was braucht unsere Intranet Applikation?</div>
+    </section>
+
+
+    <section>
+        <h1>Zuhause für Abteilungen</h1>
+        <ul>
+            <li>Information präsentieren</li>
+            <li>An Dokumenten zu kollaborieren</li>
+            <li>Unterschiedliche Ansprüche / Arbeitsweisen</li>
+        </ul>
+        <p>Abteilungen (Beispiele):</p>
+        <ul>
+            <li>Marketing</li>
+            <li>Finance</li>
+            <li>Management</li>
+            <li>Customer Support</li>
+            <li>Development</li>
+            <li>Consulting</li>
+        </ul>
+        <img class="illustration" src="img/keep-calm-we-re-moving-in-together.png">
+    </section>
+
+    <section>
+        <h1>Funktionen</h1>
+        <ul>
+            <li>Startseite</li>
+            <li>Personenverzeichnis</li>
+            <li>News</li>
+            <li>Navigation</li>
+            <li>Aufgabenverwaltung</li>
+            <li>Schwarzes Brett</li>
+            <li>Kalender</li>
+            <li>Umfragen</li>
+            <li>Diagramme</li>
+        </ul>
+        <img class="illustration" src="img/1200px-Function_machine2.svg.png">
+    </section>
+
+    <section>
+        <h1>Implementierung mit...</h1>
+        <div class="mega-center">?</div>
+    </section>
+
+
+    <section>
+        <h1>... Confluence!</h1>
+        <p>Und Plugins:</p>
+        <ul>
+            <li>Lively Theme (Scandio)<br>Alternative: Welcome Message oder Refined Theme (RefinedWiki)</li>
+            <li>Lively Blogs (Scandio)<br>Alternative: Standard Confluence Blogs</li>
+            <li>Hide Elements (Scandio - Free)<br>Alternative: User Macro mit einer Zeile Code</li>
+            <li>User Profiles (Communardo)</li>
+            <li>Team Calendars (Atlassian)</li>
+            <li>Polls (Simplenia)</li>
+            <li>Gliffy Diagrams (Gliffy)</li>
+        </ul>
+        <img class="illustration" src="img/confluence.png">
+    </section>
+
+    <section>
+        <h1>Confluence installieren</h1>
+        <ul>
+            <li><a href="https://www.atlassian.com/software/confluence/download">Download Confluence Server</a></li>
+            <li>Lokales Confluence gestartet</li>
+            <li>Zusätzlich Crowd als User Directory</li>
+            <li><a href="http://nip.local:1990/confluence/">-> Confluence</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Users</h1>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/embedded-crowd/directories/list">Confluence Admin -> Users & Security -> User Directories</a></li>
+            <li>Url: <code>http://nip.local:4990/crowd</code></li>
+            <li>Application Name/Password: <code>confluence</code></li>
+            <li><a href="http://nip.local:1990/confluence/admin/users/showallusers.action">Confluence Admin -> Users & Security -> Users</a></li>
+        </ul>
+        <img class="illustration" src="img/iPad-line.jpg">
+    </section>
+
+    <section>
+        <h1>Spaces</h1>
+        <ul>
+            <li><strong>Abteilungen: </strong>Marketing, Finance, Management, Customer Support, Development, Consulting</li>
+            <li><strong>Funktionen: </strong>News, Community, Events, Dashboard</li>
+            <li><a href="http://nip.local:1990/confluence/spaces/createspace-start.action">Spaces -> Create Space</a> (<code>Management</code>)</li>
+            <li><a href="http://nip.local:1990/confluence/admin/backup.action">Confluence Admin -> Administration -> Backup & Restore</a></li>
+            <li><a href="http://nip.local:1990/confluence/spacedirectory/view.action">-> Space Directory</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Benutzerverzeichnis</h1>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/users/editmyprofile.action">Default User Profile</a></li>
+            <li><a href="http://nip.local:1990/confluence/browsepeople.action">Default People Directory</a></li>
+        </ul>
+
+        <p>Problem:</p>
+        <ul>
+            <li>Felder nicht erweiterbar</li>
+            <li>Keine Filtermöglichkeiten</li>
+        </ul>
+
+        <p>Lösung:</p>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> User Profiles for Confluence</a></li>
+            <li><a href="http://nip.local:1990/confluence/admin/communardo/plugins/userprofile/doViewConfiguration.action">Profile Felder anpassbar</a> (Synchronisation mit LDAP möglich)</li>
+            <li><a href="http://nip.local:1990/confluence/communardo/userprofile/indexofpersons.action">People Directort filterbar</a></li>
+            <li>Macro verfügbar um gefilterte Listen zu erstellen</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Blogs</h1>
+        <ul>
+            <li>Blog Posts müssen aufs Dashboard ;)</li>
+            <li>Lively Blogs fügt Stream auf Dashboard hinzu</li>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> Lively Blogs for Confluence</a></li>
+            <li><a href="http://nip.local:1990/confluence/">-> Dashboard</a></li>
+        </ul>
+
+        <p>Zusatzfunktionen:</p>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence">Teaser image, Important News</a></li>
+            <li><a href="http://nip.local:1990/confluence/plugins/lively/blog/all.action">Blogs Page mit Filtermöglichkeiten</a></li>
+        </ul>
+        <img class="illustration" src="img/social-media-blog-promotion.jpg">
+    </section>
+
+    <section>
+        <h1>Bereichs-Navigation</h1>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/">Reicht Default Space Navigation?</a></li>
+            <li><a href="http://nip.local:1990/confluence/">In Welcome Message?</a></li>
+        </ul>
+
+        <p>Lösung: Theming!</p>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> Lively Theme for Confluence</a></li>
+            <li><a href="http://nip.local:1990/confluence/admin/choosetheme.action">Confluence Admin -> Look & Feel -> Themes</a></li>
+            <li><a href="http://nip.local:1990/confluence/">-> Dashbord</a></li>
+        </ul>
+
+        <p>Navigations Widget:</p>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/pages/createpage.action?spaceKey=DAS">Navigation Seite erstellen im Dashboard Space</a> <code>Navigation</code> <code>60px</code></li>
+            <li><a href="http://nip.local:1990/confluence/admin/plugins/lively/widgets/settings.action">Confluence Admin -> Lively -> Widget Settings</a> (Remove Welcome, add Navigation)</li>
+            <li><a href="http://nip.local:1990/confluence/">-> Dashbord</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Aufgabenverwaltung</h1>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/pages/createpage.action?spaceKey=MAN">Confluence hat Inline Tasks</a></li>
+            <li><a href="http://nip.local:1990/confluence/plugins/inlinetasks/mytasks.action">Tasks im Profil</a></li>
+            <li><a href="http://nip.local:1990/confluence/">-> Dasbhboard</a></li>
+        </ul>
+        <img class="illustration" src="img/Goals_Not_Tasks_Logo.jpg">
+    </section>
+
+    <section>
+        <h1>Schwarzes Brett</h1>
+
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/display/COM/">-> Community Space</a></li>
+            <li>Section 2/1</li>
+            <li>Banner hinzufügen (Original size)</li>
+            <li>Blog Post Macro</li>
+            <li>Panel mit Recently Updated mit Comments als Sidebar</li>
+            <li>Hinzufügen Button mit Tabelle<br><code>http://nip.local:1990/confluence/pages/createblogpost.action?spaceKey=COM</code><br><code>Beitrag Hinzufügen</code></li>
+        </ul>
+
+        <p>Seite verschlanken:</p>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> Hide Elements</a></li>
+            <li><a href="http://nip.local:1990/confluence/display/COM/">-> Hide Stuff</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Schwarzes Brett Widget</h1>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/pages/createpage.action?spaceKey=DAS">Dashboard Seite hinzufügen</a><code>Schwarzes Brett</code></li>
+            <li>Recently Updated mit <code>blogpost,comment</code> in Space <code>COM</code> ohne Titel</li>
+            <li><a href="http://nip.local:1990/confluence/admin/plugins/lively/widgets/settings.action">Als Widget hinzufügen</a></li>
+            <li><a href="http://nip.local:1990/confluence">-> Dashboard</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Kalender</h1>
+        <ul>
+            <li>Einträge hinzufügen (Firmen Events, Geburtstage)</li>
+            <li>Kalender importieren</li>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> Team Calendars</a></li>
+            <li><a href="http://nip.local:1990/confluence/">-> Dashboard</a></li>
+        </ul>
+
+        <p>Event erstellen:</p>
+        <ul>
+            <li><a href="http://nip.local:1990/confluence/calendar/mycalendar.action">Create Calendar</a> <code>Events</code></li>
+            <li><a href="http://nip.local:1990/confluence/#all-updates">-> Dashboard</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Umfragen</h1>
+        <ul>
+            <li>Meinung der Mitarbeiter ist wichtig :)</li>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> Polls for Confluence</a></li>
+            <li><a href="http://nip.local:1990/confluence/polls/listpolls.action">Make a Choice</a><br><code>Welche T-Shirt Farbe gefällt euch? </code><code>rot</code> / <code>schwarz</code></li>
+        </ul>
+
+        <p>Umfrage Teilen:</p>
+        <ul>
+            <li>Blogpost oder <a href="http://nip.local:1990/confluence/pages/createpage.action?spaceKey=DAS">Dashboard</a> <code>Aktuelle Umfrage</code></li>
+            <li><A href="http://nip.local:1990/confluence/admin/plugins/lively/widgets/settings.action">-> Widget Settings</A></li>
+            <li><A href="http://nip.local:1990/confluence/">-> Dashboard</A></li>
+        </ul>
+        <img class="illustration" src="img/opinion-poll.png">
+    </section>
+
+    <section>
+        <h1>Diagramme</h1>
+        <ul>
+            <li>Visuelle Dokumentation</li>
+            <li><a href="http://nip.local:1990/confluence/plugins/servlet/upm">Confluence Admin -> Manage Add-ons -> Gliffy</a></li>
+            <li><a href="http://nip.local:1990/confluence/display/DEV">-> Development Space</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Unser Intranet ist eingerichtet!</h1>
+        <ul>
+            <li>Easy, oder? :)</li>
+            <li><a href="http://nip.local:1990/confluence">-> Startseite</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Danke!</h1>
+        <img class="full" src="img/Dashboard_-_Confluence.png">
+        <p><a href="https://scandio.github.io/intranet-in-30-minutes/">https://scandio.github.io/intranet-in-30-minutes/</a></p>
+    </section>
+</div>
+
+<script src="vendor/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="js/next.js"></script>
+<script src="js/clipboard.js"></script>
 
 </body>
 </html>

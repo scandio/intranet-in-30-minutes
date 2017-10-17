@@ -1,0 +1,54 @@
+body {
+    font-size: 1.5rem;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 3rem;
+}
+
+ul li {
+    margin: 1rem 0;
+}
+
+.mega-center {
+    background: #f5f5f5;
+    font-size: 7rem;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.conclusion {
+    background: #f5f5f5;
+    font-size: 3rem;
+    margin: 4rem 0;
+    padding: 2rem;
+}
+
+img.full {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+img.illustration {
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    max-height: 25rem;
+    max-width: 30rem;
+}
+
+img.illustration.top {
+    top: 5rem;
+}
